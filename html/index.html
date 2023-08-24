@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        Code Quiz
+    </header>
+
+    <div id="starter-container" class="show">
+        <div class="container start">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Answer the following questions and complete the quiz to get a score. You can retake the quiz to aim for a
+                higher score. Each wrong answer deducts 2 points. You have until the timer runs out!</p>
+            <button class="btn start" id="start-game">Start Quiz</button>
+        </div>
+    </div>
+
+    <div id="question-container" class="hide">
+        <div class="container questions">
+            <div id="question"></div>
+            <div id="answer-buttons" class="btn-grid"></div>
+        </div>
+    </div>
+
+    <div id="container" class="hide">
+        <div class="end container">
+            <div id="score-banner">
+                <h1>You have completed the Quiz. Click here to see your answers.</h1>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <h1>What are your initials?</h1>
+            <ol id="high-score-list" class="score-list"></ol>
+            <div>
+                <button class="btn" id="clear-high-scores">Clear High Scores</button>
+            </div>
+        </div>
+    </div>
+
+    <input type="text" id="initials" name="initials" placeholder="Your initials...">
+    <button class="btn" id="submit-score">Submit</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
